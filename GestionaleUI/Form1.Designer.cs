@@ -95,6 +95,7 @@
             this.StampaUtenti.TabIndex = 4;
             this.StampaUtenti.Text = "Stampa Pazienti";
             this.StampaUtenti.UseVisualStyleBackColor = true;
+            this.StampaUtenti.Click += new System.EventHandler(this.VisualizzaUtente_Click);
             // 
             // EliminaUtente
             // 

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GestionaleUI.BackEnd;
 using GestionaleUI.FrontEnd;
 
 
@@ -24,12 +25,11 @@ namespace GestionaleUI
             // Pulisce il contenuto del panelContenuto
             panelContenuto.Controls.Clear();
 
-            // Crea un'istanza del form "AggiungiUtenteForm" e lo aggiunge al pannello
-            AggiungiUtente_Form aggiungiForm = new AggiungiUtente_Form();
-            aggiungiForm.TopLevel = false;  // Permette di visualizzare il form come controllo
-            aggiungiForm.Dock = DockStyle.Fill;  // Assicura che occupi tutto lo spazio del pannello
-            panelContenuto.Controls.Add(aggiungiForm);
-            aggiungiForm.Show();
+            // Crea una nuova istanza del controllo (NON riutilizzare una già aggiunta altrove)
+            var aggiungiUtenteControl = new AggiungiPazienti();
+
+            aggiungiUtenteControl.Dock = DockStyle.Fill;
+            panelContenuto.Controls.Add(aggiungiUtenteControl);
         }
 
         private void ModificaUtente_Click(object sender, EventArgs e)
@@ -60,6 +60,19 @@ namespace GestionaleUI
 
             // Aggiungi il Label al pannello contenuto
             panelContenuto.Controls.Add(eliminaLabel);
+        }
+
+        private void VisualizzaUtente_Click(object sender, EventArgs e)
+        {
+            // Pulisce il contenuto del panelContenuto
+            // Pulisce il contenuto del panelContenuto
+            panelContenuto.Controls.Clear();
+
+            // Crea una nuova istanza del controllo (NON riutilizzare una già aggiunta altrove)
+            var VisualizzaUtente_Click = new StampaPazienti();
+
+            VisualizzaUtente_Click.Dock = DockStyle.Fill;
+            panelContenuto.Controls.Add(VisualizzaUtente_Click);
         }
         private void Esci_Click(object sender, EventArgs e)
         {
