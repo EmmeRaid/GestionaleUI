@@ -36,12 +36,11 @@
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dosaggioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rigaPazienteEstesaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rigaPazienteEstesaBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rigaPazienteEstesaBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -59,9 +58,10 @@
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
+            this.dosaggioDataGridViewTextBoxColumn,
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
-            this.dataGridView1.DataSource = this.rigaPazienteEstesaBindingSource1;
+            this.dataGridView1.DataSource = this.rigaPazienteEstesaBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
@@ -111,6 +111,13 @@
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
+            // dosaggioDataGridViewTextBoxColumn
+            // 
+            this.dosaggioDataGridViewTextBoxColumn.DataPropertyName = "Dosaggio";
+            this.dosaggioDataGridViewTextBoxColumn.HeaderText = "Dosaggio";
+            this.dosaggioDataGridViewTextBoxColumn.Name = "dosaggioDataGridViewTextBoxColumn";
+            this.dosaggioDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // dataGridViewTextBoxColumn6
             // 
             this.dataGridViewTextBoxColumn6.DataPropertyName = "InizioPiano";
@@ -125,10 +132,6 @@
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
-            // rigaPazienteEstesaBindingSource1
-            // 
-            this.rigaPazienteEstesaBindingSource1.DataSource = typeof(GestionaleUI.FrontEnd.StampaPazienti.RigaPazienteEstesa);
-            // 
             // StampaPazienti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -139,7 +142,6 @@
             this.Size = new System.Drawing.Size(1157, 763);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rigaPazienteEstesaBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rigaPazienteEstesaBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -160,9 +162,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dosaggioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.BindingSource rigaPazienteEstesaBindingSource;
-        private System.Windows.Forms.BindingSource rigaPazienteEstesaBindingSource1;
     }
 }

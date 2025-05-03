@@ -21,6 +21,7 @@ namespace GestionaleUI.FrontEnd
             public string CodiceFiscale { get; set; }
             public DateTime DataNascita { get; set; }
             public string Farmaco { get; set; }
+            public string Dosaggio { get; set; } // Aggiunto per il dosaggio
             public DateTime InizioPiano { get; set; }
             public DateTime FinePiano { get; set; }
         }
@@ -43,7 +44,8 @@ namespace GestionaleUI.FrontEnd
                         DataNascita = primaRiga ? p.DataNascita : DateTime.MinValue,
                         Farmaco = piano.Farmaco,
                         InizioPiano = piano.Inizio,
-                        FinePiano = piano.Fine
+                        FinePiano = piano.Fine,
+                        Dosaggio = piano.Dosaggio, // Aggiunto per il dosaggio
                     });
 
                     primaRiga = false;

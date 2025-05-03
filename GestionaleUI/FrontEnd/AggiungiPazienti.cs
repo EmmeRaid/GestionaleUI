@@ -24,6 +24,7 @@ namespace GestionaleUI.FrontEnd
             string cognome = txtCognome.Text.Trim();
             string codiceFiscale = txtCF.Text.Trim();
             string farmaco = txtFarmaco.Text.Trim();
+            string dosaggio = txtDosaggio.Text.Trim(); // Aggiunto per il dosaggio
 
             DateTime dataNascita = dateTimePickerNascita.Value;
             DateTime dataInizioPiano = dateTimePickerInizio.Value;
@@ -40,7 +41,7 @@ namespace GestionaleUI.FrontEnd
                 if (pazienteEsistente != null)
                 {
                     // Se il paziente esiste già, aggiungi il piano
-                    var piano = new PianoTerapeutico(farmaco, dataInizioPiano, dataFinePiano);
+                    var piano = new PianoTerapeutico(farmaco, dataInizioPiano, dataFinePiano, dosaggio);
                     pazienteEsistente.AggiungiPiano(piano);
                     PazienteStore.SalvaSuFile(); // Salva tutto su file JSON
                     MessageBox.Show("Piano aggiunto al paziente esistente!");
@@ -51,7 +52,7 @@ namespace GestionaleUI.FrontEnd
                     var paziente = new Paziente(nome, cognome, codiceFiscale, dataNascita);
 
                     // Crea il piano e aggiungilo al nuovo paziente
-                    var piano = new PianoTerapeutico(farmaco, dataInizioPiano, dataFinePiano);
+                    var piano = new PianoTerapeutico(farmaco, dataInizioPiano, dataFinePiano, dosaggio);
                     paziente.AggiungiPiano(piano);
 
                     PazienteStore.Aggiungi(paziente); // Aggiungi il nuovo paziente alla lista
