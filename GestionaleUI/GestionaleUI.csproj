@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="BackEnd\Paziente.cs" />
     <Compile Include="BackEnd\PazienteStore.cs" />
+    <Compile Include="BackEnd\PianoTerapeutico.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +93,9 @@
     <None Include="packages.config" />
     <None Include="Properties\DataSources\GestionaleUI.BackEnd.Paziente.datasource" />
     <None Include="Properties\DataSources\GestionaleUI.BackEnd.PazienteStore.datasource" />
+    <None Include="Properties\DataSources\GestionaleUI.FrontEnd.AggiungiPazienti.datasource" />
+    <None Include="Properties\DataSources\GestionaleUI.FrontEnd.StampaPazienti+RigaPazienteEstesa.datasource" />
+    <None Include="Properties\DataSources\GestionaleUI.FrontEnd.StampaPazienti.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

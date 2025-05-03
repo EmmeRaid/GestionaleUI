@@ -16,8 +16,6 @@ namespace GestionaleUI.FrontEnd
         public AggiungiPazienti()
         {
             InitializeComponent();
-            PazienteStore.CaricaDaFile();
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -36,19 +34,30 @@ namespace GestionaleUI.FrontEnd
                 !string.IsNullOrWhiteSpace(codiceFiscale) &&
                 !string.IsNullOrWhiteSpace(farmaco))
             {
-                var paziente = new Paziente(nome, cognome, codiceFiscale, dataNascita, farmaco, dataInizioPiano, dataFinePiano);
-                PazienteStore.Aggiungi(paziente);
-                PazienteStore.SalvaSuFile(); // Usa il percorso centralizzato
-                MessageBox.Show("Paziente salvato con successo!");
+                // Cerca se esiste già un paziente con lo stesso Codice Fiscale
+                var pazienteEsistente = PazienteStore.ListaPazienti.FirstOrDefault(p => p.CodiceFiscale == codiceFiscale);
 
-                // Pulizia dei campi
-                txtNome.Clear();
-                txtCognome.Clear();
-                txtCF.Clear();
-                txtFarmaco.Clear();
-                dateTimePickerNascita.Value = DateTime.Today;
-                dateTimePickerInizio.Value = DateTime.Today;
-                dateTimePickerFine.Value = DateTime.Today;
+                if (pazienteEsistente != null)
+                {
+                    // Se il paziente esiste già, aggiungi il piano
+                    var piano = new PianoTerapeutico(farmaco, dataInizioPiano, dataFinePiano);
+                    pazienteEsistente.AggiungiPiano(piano);
+                    PazienteStore.SalvaSuFile(); // Salva tutto su file JSON
+                    MessageBox.Show("Piano aggiunto al paziente esistente!");
+                }
+                else
+                {
+                    // Se il paziente non esiste, crealo
+                    var paziente = new Paziente(nome, cognome, codiceFiscale, dataNascita);
+
+                    // Crea il piano e aggiungilo al nuovo paziente
+                    var piano = new PianoTerapeutico(farmaco, dataInizioPiano, dataFinePiano);
+                    paziente.AggiungiPiano(piano);
+
+                    PazienteStore.Aggiungi(paziente); // Aggiungi il nuovo paziente alla lista
+                    PazienteStore.SalvaSuFile(); // Salva tutto su file JSON
+                    MessageBox.Show("Paziente salvato con successo!");
+                }
             }
             else
             {
@@ -58,7 +67,7 @@ namespace GestionaleUI.FrontEnd
 
         private void label9_Click(object sender, EventArgs e)
         {
-
+            // Puoi lasciare questo vuoto o implementarlo come necessario
         }
     }
 }

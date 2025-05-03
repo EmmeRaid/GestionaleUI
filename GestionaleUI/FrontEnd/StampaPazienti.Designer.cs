@@ -30,25 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.nomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cognomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codiceFiscaleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataNascitaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.farmacoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descrizioneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.inizioPianoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.finePianoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pazienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pazienteBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.pazienteStoreBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pazienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.pazienteStoreBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.rigaPazienteEstesaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rigaPazienteEstesaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pazienteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pazienteBindingSource2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pazienteStoreBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pazienteBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pazienteStoreBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rigaPazienteEstesaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rigaPazienteEstesaBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -57,116 +50,96 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nomeDataGridViewTextBoxColumn,
-            this.cognomeDataGridViewTextBoxColumn,
-            this.codiceFiscaleDataGridViewTextBoxColumn,
-            this.dataNascitaDataGridViewTextBoxColumn,
-            this.farmacoDataGridViewTextBoxColumn,
-            this.descrizioneDataGridViewTextBoxColumn,
-            this.inizioPianoDataGridViewTextBoxColumn,
-            this.finePianoDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.pazienteBindingSource;
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7});
+            this.dataGridView1.DataSource = this.rigaPazienteEstesaBindingSource1;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(964, 620);
+            this.dataGridView1.Size = new System.Drawing.Size(1157, 763);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // nomeDataGridViewTextBoxColumn
+            // rigaPazienteEstesaBindingSource
             // 
-            this.nomeDataGridViewTextBoxColumn.DataPropertyName = "Nome";
-            this.nomeDataGridViewTextBoxColumn.HeaderText = "Nome";
-            this.nomeDataGridViewTextBoxColumn.Name = "nomeDataGridViewTextBoxColumn";
-            this.nomeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.rigaPazienteEstesaBindingSource.DataSource = typeof(GestionaleUI.FrontEnd.StampaPazienti.RigaPazienteEstesa);
             // 
-            // cognomeDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn1
             // 
-            this.cognomeDataGridViewTextBoxColumn.DataPropertyName = "Cognome";
-            this.cognomeDataGridViewTextBoxColumn.HeaderText = "Cognome";
-            this.cognomeDataGridViewTextBoxColumn.Name = "cognomeDataGridViewTextBoxColumn";
-            this.cognomeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Nome";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
-            // codiceFiscaleDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn2
             // 
-            this.codiceFiscaleDataGridViewTextBoxColumn.DataPropertyName = "CodiceFiscale";
-            this.codiceFiscaleDataGridViewTextBoxColumn.HeaderText = "CodiceFiscale";
-            this.codiceFiscaleDataGridViewTextBoxColumn.Name = "codiceFiscaleDataGridViewTextBoxColumn";
-            this.codiceFiscaleDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Cognome";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Cognome";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
-            // dataNascitaDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn3
             // 
-            this.dataNascitaDataGridViewTextBoxColumn.DataPropertyName = "DataNascita";
-            this.dataNascitaDataGridViewTextBoxColumn.HeaderText = "DataNascita";
-            this.dataNascitaDataGridViewTextBoxColumn.Name = "dataNascitaDataGridViewTextBoxColumn";
-            this.dataNascitaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "CodiceFiscale";
+            this.dataGridViewTextBoxColumn3.HeaderText = "CodiceFiscale";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
-            // farmacoDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn4
             // 
-            this.farmacoDataGridViewTextBoxColumn.DataPropertyName = "Farmaco";
-            this.farmacoDataGridViewTextBoxColumn.HeaderText = "Farmaco";
-            this.farmacoDataGridViewTextBoxColumn.Name = "farmacoDataGridViewTextBoxColumn";
-            this.farmacoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "DataNascita";
+            this.dataGridViewTextBoxColumn4.HeaderText = "DataNascita";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
-            // descrizioneDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn5
             // 
-            this.descrizioneDataGridViewTextBoxColumn.DataPropertyName = "Descrizione";
-            this.descrizioneDataGridViewTextBoxColumn.HeaderText = "Descrizione";
-            this.descrizioneDataGridViewTextBoxColumn.Name = "descrizioneDataGridViewTextBoxColumn";
-            this.descrizioneDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Farmaco";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Farmaco";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
             // 
-            // inizioPianoDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn6
             // 
-            this.inizioPianoDataGridViewTextBoxColumn.DataPropertyName = "InizioPiano";
-            this.inizioPianoDataGridViewTextBoxColumn.HeaderText = "InizioPiano";
-            this.inizioPianoDataGridViewTextBoxColumn.Name = "inizioPianoDataGridViewTextBoxColumn";
-            this.inizioPianoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "InizioPiano";
+            this.dataGridViewTextBoxColumn6.HeaderText = "InizioPiano";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
-            // finePianoDataGridViewTextBoxColumn
+            // dataGridViewTextBoxColumn7
             // 
-            this.finePianoDataGridViewTextBoxColumn.DataPropertyName = "FinePiano";
-            this.finePianoDataGridViewTextBoxColumn.HeaderText = "FinePiano";
-            this.finePianoDataGridViewTextBoxColumn.Name = "finePianoDataGridViewTextBoxColumn";
-            this.finePianoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "FinePiano";
+            this.dataGridViewTextBoxColumn7.HeaderText = "FinePiano";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
             // 
-            // pazienteBindingSource
+            // rigaPazienteEstesaBindingSource1
             // 
-            this.pazienteBindingSource.DataSource = typeof(GestionaleUI.BackEnd.Paziente);
-            // 
-            // pazienteBindingSource2
-            // 
-            this.pazienteBindingSource2.DataSource = typeof(GestionaleUI.BackEnd.Paziente);
-            // 
-            // pazienteStoreBindingSource
-            // 
-            this.pazienteStoreBindingSource.DataSource = typeof(GestionaleUI.BackEnd.PazienteStore);
-            // 
-            // pazienteBindingSource1
-            // 
-            this.pazienteBindingSource1.DataSource = typeof(GestionaleUI.BackEnd.Paziente);
-            // 
-            // pazienteStoreBindingSource1
-            // 
-            this.pazienteStoreBindingSource1.DataSource = typeof(GestionaleUI.BackEnd.PazienteStore);
+            this.rigaPazienteEstesaBindingSource1.DataSource = typeof(GestionaleUI.FrontEnd.StampaPazienti.RigaPazienteEstesa);
             // 
             // StampaPazienti
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StampaPazienti";
-            this.Size = new System.Drawing.Size(964, 620);
+            this.Size = new System.Drawing.Size(1157, 763);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pazienteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pazienteBindingSource2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pazienteStoreBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pazienteBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pazienteStoreBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rigaPazienteEstesaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rigaPazienteEstesaBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -174,8 +147,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource pazienteBindingSource;
-        private System.Windows.Forms.BindingSource pazienteStoreBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cognomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codiceFiscaleDataGridViewTextBoxColumn;
@@ -184,8 +155,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn descrizioneDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn inizioPianoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn finePianoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource pazienteBindingSource2;
-        private System.Windows.Forms.BindingSource pazienteBindingSource1;
-        private System.Windows.Forms.BindingSource pazienteStoreBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.BindingSource rigaPazienteEstesaBindingSource;
+        private System.Windows.Forms.BindingSource rigaPazienteEstesaBindingSource1;
     }
 }
