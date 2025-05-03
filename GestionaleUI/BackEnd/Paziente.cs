@@ -16,6 +16,7 @@ public class Paziente
         Cognome = cognome;
         CodiceFiscale = codiceFiscale;
         DataNascita = dataNascita;
+        Piani = new List<PianoTerapeutico>();
     }
 
     public void AggiungiPiano(PianoTerapeutico piano)

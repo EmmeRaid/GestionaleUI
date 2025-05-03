@@ -37,14 +37,11 @@ namespace GestionaleUI
             // Pulisce il contenuto del panelContenuto
             panelContenuto.Controls.Clear();
 
-            // Crea un nuovo Label per "Modifica Utente"
-            Label modificaLabel = new Label();
-            modificaLabel.Text = "Modifica Utente";
-            modificaLabel.AutoSize = true;
-            modificaLabel.Location = new Point(10, 10); // Modifica la posizione a tuo piacimento
+            // Crea una nuova istanza del controllo (NON riutilizzare una già aggiunta altrove)
+            var modificaUtenteControl = new ModificaPaziente();
 
-            // Aggiungi il Label al pannello contenuto
-            panelContenuto.Controls.Add(modificaLabel);
+            modificaUtenteControl.Dock = DockStyle.Fill;
+            panelContenuto.Controls.Add(modificaUtenteControl);
         }
 
         private void EliminaUtente_Click(object sender, EventArgs e)

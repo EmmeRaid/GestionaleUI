@@ -15,6 +15,7 @@ namespace GestionaleUI
         [STAThread]
         static void Main()
         {
+            PazienteStore.CaricaDaFile(); // Carica i dati dal file JSON
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

@@ -38,6 +38,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -70,6 +72,12 @@
     <Compile Include="FrontEnd\StampaPazienti.Designer.cs">
       <DependentUpon>StampaPazienti.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrontEnd\ModificaPaziente.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrontEnd\ModificaPaziente.Designer.cs">
+      <DependentUpon>ModificaPaziente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -77,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\AggiungiPazienti.resx">
       <DependentUpon>AggiungiPazienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrontEnd\ModificaPaziente.resx">
+      <DependentUpon>ModificaPaziente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrontEnd\StampaPazienti.resx">
       <DependentUpon>StampaPazienti.cs</DependentUpon>
@@ -96,6 +107,7 @@
     <None Include="Properties\DataSources\GestionaleUI.FrontEnd.AggiungiPazienti.datasource" />
     <None Include="Properties\DataSources\GestionaleUI.FrontEnd.StampaPazienti+RigaPazienteEstesa.datasource" />
     <None Include="Properties\DataSources\GestionaleUI.FrontEnd.StampaPazienti.datasource" />
+    <None Include="Properties\DataSources\Paziente.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

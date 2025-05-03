@@ -47,8 +47,9 @@
             this.PanelMenu.Controls.Add(this.tableLayoutPanel1);
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
+            this.PanelMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.Size = new System.Drawing.Size(200, 633);
+            this.PanelMenu.Size = new System.Drawing.Size(267, 779);
             this.PanelMenu.TabIndex = 0;
             // 
             // tableLayoutPanel1
@@ -61,7 +62,8 @@
             this.tableLayoutPanel1.Controls.Add(this.ModificaUtente, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.AggiungiUtente, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 25);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 31);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -70,7 +72,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(200, 287);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(267, 353);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // Esci
@@ -78,9 +80,10 @@
             this.Esci.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Esci.BackColor = System.Drawing.Color.Transparent;
             this.Esci.ForeColor = System.Drawing.Color.Black;
-            this.Esci.Location = new System.Drawing.Point(40, 249);
+            this.Esci.Location = new System.Drawing.Point(53, 307);
+            this.Esci.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Esci.Name = "Esci";
-            this.Esci.Size = new System.Drawing.Size(120, 23);
+            this.Esci.Size = new System.Drawing.Size(160, 28);
             this.Esci.TabIndex = 5;
             this.Esci.Text = "Esci";
             this.Esci.UseVisualStyleBackColor = false;
@@ -89,9 +92,10 @@
             // StampaUtenti
             // 
             this.StampaUtenti.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.StampaUtenti.Location = new System.Drawing.Point(40, 200);
+            this.StampaUtenti.Location = new System.Drawing.Point(53, 247);
+            this.StampaUtenti.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StampaUtenti.Name = "StampaUtenti";
-            this.StampaUtenti.Size = new System.Drawing.Size(120, 23);
+            this.StampaUtenti.Size = new System.Drawing.Size(160, 28);
             this.StampaUtenti.TabIndex = 4;
             this.StampaUtenti.Text = "Stampa Pazienti";
             this.StampaUtenti.UseVisualStyleBackColor = true;
@@ -100,9 +104,10 @@
             // EliminaUtente
             // 
             this.EliminaUtente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.EliminaUtente.Location = new System.Drawing.Point(40, 153);
+            this.EliminaUtente.Location = new System.Drawing.Point(53, 189);
+            this.EliminaUtente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EliminaUtente.Name = "EliminaUtente";
-            this.EliminaUtente.Size = new System.Drawing.Size(120, 23);
+            this.EliminaUtente.Size = new System.Drawing.Size(160, 28);
             this.EliminaUtente.TabIndex = 3;
             this.EliminaUtente.Text = "Elimina Paziente";
             this.EliminaUtente.UseVisualStyleBackColor = true;
@@ -111,9 +116,10 @@
             // ModificaUtente
             // 
             this.ModificaUtente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ModificaUtente.Location = new System.Drawing.Point(40, 106);
+            this.ModificaUtente.Location = new System.Drawing.Point(53, 131);
+            this.ModificaUtente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ModificaUtente.Name = "ModificaUtente";
-            this.ModificaUtente.Size = new System.Drawing.Size(120, 23);
+            this.ModificaUtente.Size = new System.Drawing.Size(160, 28);
             this.ModificaUtente.TabIndex = 2;
             this.ModificaUtente.Text = "Modifica Paziente";
             this.ModificaUtente.UseVisualStyleBackColor = true;
@@ -124,37 +130,42 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(51, 8);
+            this.label1.Location = new System.Drawing.Point(61, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 31);
+            this.label1.Size = new System.Drawing.Size(145, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "MENU";
+            this.label1.Text = "FarmaLog";
             // 
             // AggiungiUtente
             // 
             this.AggiungiUtente.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.AggiungiUtente.Location = new System.Drawing.Point(40, 59);
+            this.AggiungiUtente.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AggiungiUtente.Location = new System.Drawing.Point(53, 73);
+            this.AggiungiUtente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AggiungiUtente.Name = "AggiungiUtente";
-            this.AggiungiUtente.Size = new System.Drawing.Size(120, 23);
+            this.AggiungiUtente.Size = new System.Drawing.Size(160, 28);
             this.AggiungiUtente.TabIndex = 1;
             this.AggiungiUtente.Text = "Aggiungi Paziente";
-            this.AggiungiUtente.UseVisualStyleBackColor = true;
+            this.AggiungiUtente.UseVisualStyleBackColor = false;
             this.AggiungiUtente.Click += new System.EventHandler(this.AggiungiUtente_Click);
             // 
             // panelContenuto
             // 
-            this.panelContenuto.Location = new System.Drawing.Point(203, 0);
+            this.panelContenuto.Location = new System.Drawing.Point(275, 0);
+            this.panelContenuto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelContenuto.Name = "panelContenuto";
-            this.panelContenuto.Size = new System.Drawing.Size(984, 633);
+            this.panelContenuto.Size = new System.Drawing.Size(1312, 779);
             this.panelContenuto.TabIndex = 1;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1186, 633);
+            this.ClientSize = new System.Drawing.Size(1581, 779);
             this.Controls.Add(this.panelContenuto);
             this.Controls.Add(this.PanelMenu);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.PanelMenu.ResumeLayout(false);

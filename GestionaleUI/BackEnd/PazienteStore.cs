@@ -36,7 +36,10 @@ namespace GestionaleUI.BackEnd
 
         public static void SalvaSuFile()
         {
+            // Sincronizza il file con i dati correnti
             Directory.CreateDirectory(Path.GetDirectoryName(filePath)); // Crea la cartella se non esiste
+
+            // Scrivi nel file JSON
             string json = JsonConvert.SerializeObject(ListaPazienti, Formatting.Indented);
             File.WriteAllText(filePath, json);
         }
