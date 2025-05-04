@@ -1,6 +1,6 @@
 ﻿namespace GestionaleUI
 {
-    partial class Form1
+    partial class FarmaLog
     {
         /// <summary>
         /// Variabile di progettazione necessaria.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FarmaLog));
             this.PanelMenu = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.Esci = new System.Windows.Forms.Button();
@@ -43,11 +44,11 @@
             // 
             // PanelMenu
             // 
-            this.PanelMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.PanelMenu.BackColor = System.Drawing.Color.LightSlateGray;
             this.PanelMenu.Controls.Add(this.tableLayoutPanel1);
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
-            this.PanelMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PanelMenu.Margin = new System.Windows.Forms.Padding(4);
             this.PanelMenu.Name = "PanelMenu";
             this.PanelMenu.Size = new System.Drawing.Size(267, 779);
             this.PanelMenu.TabIndex = 0;
@@ -63,7 +64,7 @@
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.AggiungiUtente, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 31);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
@@ -81,7 +82,7 @@
             this.Esci.BackColor = System.Drawing.Color.Transparent;
             this.Esci.ForeColor = System.Drawing.Color.Black;
             this.Esci.Location = new System.Drawing.Point(53, 307);
-            this.Esci.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Esci.Margin = new System.Windows.Forms.Padding(4);
             this.Esci.Name = "Esci";
             this.Esci.Size = new System.Drawing.Size(160, 28);
             this.Esci.TabIndex = 5;
@@ -93,7 +94,7 @@
             // 
             this.StampaUtenti.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.StampaUtenti.Location = new System.Drawing.Point(53, 247);
-            this.StampaUtenti.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StampaUtenti.Margin = new System.Windows.Forms.Padding(4);
             this.StampaUtenti.Name = "StampaUtenti";
             this.StampaUtenti.Size = new System.Drawing.Size(160, 28);
             this.StampaUtenti.TabIndex = 4;
@@ -105,7 +106,7 @@
             // 
             this.EliminaUtente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.EliminaUtente.Location = new System.Drawing.Point(53, 189);
-            this.EliminaUtente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EliminaUtente.Margin = new System.Windows.Forms.Padding(4);
             this.EliminaUtente.Name = "EliminaUtente";
             this.EliminaUtente.Size = new System.Drawing.Size(160, 28);
             this.EliminaUtente.TabIndex = 3;
@@ -117,7 +118,7 @@
             // 
             this.ModificaUtente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ModificaUtente.Location = new System.Drawing.Point(53, 131);
-            this.ModificaUtente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ModificaUtente.Margin = new System.Windows.Forms.Padding(4);
             this.ModificaUtente.Name = "ModificaUtente";
             this.ModificaUtente.Size = new System.Drawing.Size(160, 28);
             this.ModificaUtente.TabIndex = 2;
@@ -142,7 +143,7 @@
             this.AggiungiUtente.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.AggiungiUtente.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AggiungiUtente.Location = new System.Drawing.Point(53, 73);
-            this.AggiungiUtente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AggiungiUtente.Margin = new System.Windows.Forms.Padding(4);
             this.AggiungiUtente.Name = "AggiungiUtente";
             this.AggiungiUtente.Size = new System.Drawing.Size(160, 28);
             this.AggiungiUtente.TabIndex = 1;
@@ -153,21 +154,27 @@
             // panelContenuto
             // 
             this.panelContenuto.Location = new System.Drawing.Point(275, 0);
-            this.panelContenuto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelContenuto.Margin = new System.Windows.Forms.Padding(4);
             this.panelContenuto.Name = "panelContenuto";
             this.panelContenuto.Size = new System.Drawing.Size(1312, 779);
             this.panelContenuto.TabIndex = 1;
             // 
-            // Form1
+            // FarmaLog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1581, 779);
+            this.ControlBox = false;
             this.Controls.Add(this.panelContenuto);
             this.Controls.Add(this.PanelMenu);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FarmaLog";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FarmaLog";
             this.PanelMenu.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

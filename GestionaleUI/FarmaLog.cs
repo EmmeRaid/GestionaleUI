@@ -13,9 +13,9 @@ using GestionaleUI.FrontEnd;
 
 namespace GestionaleUI
 {
-    public partial class Form1 : Form
+    public partial class FarmaLog : Form
     {
-        public Form1()
+        public FarmaLog()
         {
             InitializeComponent();
         }

@@ -20,14 +20,14 @@
     ]
   },
   {
-    "Nome": "Giulia",
+    "Nome": "Marco",
     "Cognome": "Bianchi",
     "CodiceFiscale": "CF00002B",
     "DataNascita": "1980-07-24T00:00:00",
     "Piani": [
       {
         "Farmaco": "Farmaco B0",
-        "Dosaggio": "10mg",
+        "Dosaggio": "40mg",
         "Inizio": "2025-05-20T00:00:00",
         "Fine": "2025-08-15T00:00:00"
       },
