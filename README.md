@@ -35,7 +35,7 @@ Il progetto offre le seguenti funzionalità principali:
 Il progetto è organizzato come segue:
 
 GestionaleUI
-├── FrontEnd
+├── FrontEnd\n
 │ ├── StampaPazienti.cs # Interfaccia per visualizzare i pazienti e i loro piani
 │ ├── AggiungiPazienti.cs # Interfaccia per aggiungere pazienti e piani
 ├── BackEnd
