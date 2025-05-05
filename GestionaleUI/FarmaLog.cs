@@ -76,5 +76,10 @@ namespace GestionaleUI
             // Chiude il form quando si preme il pulsante Esci
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -151,5 +151,16 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\delete-user.png" />
+    <Content Include="Images\edit-profile.png" />
+    <Content Include="Images\eye.png" />
+    <Content Include="Images\logout %281%29.png" />
+    <Content Include="Images\logout.png" />
+    <Content Include="Images\user %281%29.png" />
+    <Content Include="Images\user %282%29.png" />
+    <Content Include="Images\user.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

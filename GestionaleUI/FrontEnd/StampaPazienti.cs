@@ -55,17 +55,17 @@ namespace GestionaleUI.FrontEnd
             dataGridView1.DataSource = righe; // ✅ Collega i dati alla DataGridView
         }
 
-        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
-        {
-            if (dataGridView1.Columns[e.ColumnIndex].Name == "DataNascita" && e.Value is DateTime dt)
-            {
-                if (dt == DateTime.MinValue)
-                {
-                    e.Value = "";
-                    e.FormattingApplied = true;
-                }
-            }
-        }
+        //private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        //{
+        //    if (dataGridView1.Columns[e.ColumnIndex].Name == "DataNascita" && e.Value is DateTime dt)
+        //    {
+        //        if (dt == DateTime.MinValue)
+        //        {
+        //            e.Value = "";
+        //            e.FormattingApplied = true;
+        //        }
+        //    }
+        //}
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
