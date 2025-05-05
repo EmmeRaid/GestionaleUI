@@ -35,16 +35,16 @@ Il progetto offre le seguenti funzionalità principali:
 Il progetto è organizzato come segue:
 
 GestionaleUI
-├── FrontEnd
-│ ├── StampaPazienti.cs # Interfaccia per visualizzare i pazienti e i loro piani
-│ ├── AggiungiPazienti.cs # Interfaccia per aggiungere pazienti e piani
-├── BackEnd
-│ ├── Paziente.cs # Modello di un paziente
-│ ├── PianoTerapeutico.cs # Modello di un piano terapeutico
-│ ├── PazienteStore.cs # Gestione dei dati e salvataggio su file
-├── Data
-│ └── pazienti.json # File JSON che contiene i dati dei pazienti
-└── GestionaleUI.sln # Solution del progetto
+├── FrontEnd.
+│ ├── StampaPazienti.cs # Interfaccia per visualizzare i pazienti e i loro piani.
+│ ├── AggiungiPazienti.cs # Interfaccia per aggiungere pazienti e piani.
+├── BackEnd.
+│ ├── Paziente.cs # Modello di un paziente.
+│ ├── PianoTerapeutico.cs # Modello di un piano terapeutico.
+│ ├── PazienteStore.cs # Gestione dei dati e salvataggio su file.
+├── Data.
+│ └── pazienti.json # File JSON che contiene i dati dei pazienti.
+└── GestionaleUI.sln # Solution del progetto.
 
 
 ## Come Iniziare
